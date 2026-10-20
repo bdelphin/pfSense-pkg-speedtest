@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pfsensepkgs>
+	<package>
+		<name>speedtest</name>
+		<internal_name>speedtest</internal_name>
+		<descr><![CDATA[Measure the latency, download and upload bandwidth of the firewall against speedtest.net servers, from Diagnostics &gt; Speedtest.]]></descr>
+		<website>https://github.com/bdelphin/pfSense-pkg-speedtest</website>
+		<category>Diagnostics</category>
+		<version>%%PKGVERSION%%</version>
+		<configurationfile>speedtest.xml</configurationfile>
+		<include_file>/usr/local/pkg/speedtest.inc</include_file>
+	</package>
+</pfsensepkgs>

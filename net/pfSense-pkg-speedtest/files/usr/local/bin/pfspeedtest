@@ -1,0 +1,3 @@
+#!/bin/sh
+# Command line speed test, see "pfspeedtest --help".
+exec /usr/local/bin/php -f /usr/local/pkg/speedtest/run.php -- "$@"

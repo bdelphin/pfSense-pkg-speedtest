@@ -1,0 +1,6 @@
+Measure the latency, jitter, download and upload bandwidth of the
+firewall against the speedtest.net (Ookla) server network, from
+Diagnostics > Speedtest or with the pfspeedtest command.
+
+Tests can be bound to a specific WAN, run in the background with live
+progress, and results are kept in a history.

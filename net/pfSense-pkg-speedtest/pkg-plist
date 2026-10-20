@@ -1,0 +1,11 @@
+bin/pfspeedtest
+pkg/speedtest.inc
+pkg/speedtest.xml
+pkg/speedtest/engine.inc
+pkg/speedtest/run.php
+pkg/speedtest/store.inc
+www/diag_speedtest.php
+/etc/inc/priv/speedtest.priv.inc
+%%DATADIR%%/info.xml
+@dir pkg/speedtest
+@dir /etc/inc/priv

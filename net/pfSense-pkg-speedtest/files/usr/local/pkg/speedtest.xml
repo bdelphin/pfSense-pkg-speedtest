@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE packagegui SYSTEM "../schema/packages.dtd">
+<?xml-stylesheet type="text/xsl" href="../xsl/package.xsl"?>
+<packagegui>
+	<copyright>
+	<![CDATA[
+/*
+ * speedtest.xml
+ *
+ * part of pfSense-pkg-speedtest
+ * Licensed under the Apache License, Version 2.0
+ */
+	]]>
+	</copyright>
+	<name>speedtest</name>
+	<title>Diagnostics: Speedtest</title>
+	<include_file>/usr/local/pkg/speedtest.inc</include_file>
+	<menu>
+		<name>Speedtest</name>
+		<section>Diagnostics</section>
+		<url>/diag_speedtest.php</url>
+	</menu>
+	<custom_php_install_command>
+		<![CDATA[
+		speedtest_install();
+		]]>
+	</custom_php_install_command>
+	<custom_php_deinstall_command>
+		<![CDATA[
+		speedtest_deinstall();
+		]]>
+	</custom_php_deinstall_command>
+</packagegui>

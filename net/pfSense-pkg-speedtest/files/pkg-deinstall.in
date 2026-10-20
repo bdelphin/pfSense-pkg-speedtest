@@ -1,0 +1,2 @@
+#!/bin/sh
+${PKG_ROOTDIR}/usr/local/bin/php -f ${PKG_ROOTDIR}/etc/rc.packages %%PORTNAME%% ${2}
