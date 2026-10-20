@@ -1,5 +1,6 @@
 PORTNAME=	pfSense-pkg-speedtest
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	# empty
 DISTFILES=	# empty

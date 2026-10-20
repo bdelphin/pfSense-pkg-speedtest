@@ -53,6 +53,10 @@ PORT="${SRC}/${PORT_PATH}"
 [ -f "${PORT}/Makefile" ] || die "port not found in ${SRC}."
 
 VERSION=$(sed -n 's/^PORTVERSION=[[:space:]]*//p' "${PORT}/Makefile")
+REVISION=$(sed -n 's/^PORTREVISION=[[:space:]]*//p' "${PORT}/Makefile")
+if [ -n "${REVISION}" ] && [ "${REVISION}" != "0" ]; then
+	VERSION="${VERSION}_${REVISION}"
+fi
 DATADIR=/usr/local/share/${NAME}
 STAGE="${WORK}/stage"
 PLIST="${WORK}/plist"
