@@ -21,6 +21,8 @@ The script builds a regular `pkg` package on the firewall from the port in
 [`net/pfSense-pkg-speedtest`](net/pfSense-pkg-speedtest) and installs it with `pkg add`.
 The package then shows up in **System > Package Manager > Installed Packages**, and can be
 removed from there, with `pkg delete pfSense-pkg-speedtest` or with `sh install.sh uninstall`.
+Since it is not in the official repository, the Package Manager flags it in red as
+"installed, but not available on remote repository": this is expected.
 
 Running the same command again upgrades the package. The history is kept.
 

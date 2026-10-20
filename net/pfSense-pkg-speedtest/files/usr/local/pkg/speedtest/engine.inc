@@ -18,7 +18,7 @@ class SpeedtestException extends Exception {}
 class SpeedtestCancelled extends SpeedtestException {}
 
 class SpeedtestEngine {
-	const VERSION = '0.1.0';
+	const VERSION = '0.1.1';
 	const SERVERS_URL = 'https://www.speedtest.net/api/js/servers';
 	const CLIENT_URL = 'https://www.speedtest.net/api/js/config-sdk';
 	const DOWNLOAD_SIZE = 25000000;

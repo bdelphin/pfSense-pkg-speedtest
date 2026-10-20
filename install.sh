@@ -116,5 +116,11 @@ fi
 echo ">>> Installing ${NAME}-${VERSION}..."
 pkg add "${PKGFILE}"
 
+# System > Package Manager only lists packages installed from the product repository
+PRODUCT=$(/usr/local/bin/php -r 'require_once("/etc/inc/globals.inc"); echo g_get("product_name");' 2>/dev/null)
+PRODUCT=${PRODUCT:-pfSense}
+pkg annotate -q -y -D ${NAME} repository > /dev/null 2>&1 || true
+pkg annotate -q -y -A ${NAME} repository "${PRODUCT}"
+
 echo ""
 echo "${NAME} ${VERSION} installed: Diagnostics > Speedtest, or 'pfspeedtest' from the shell."
